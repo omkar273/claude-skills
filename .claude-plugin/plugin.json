@@ -1,0 +1,6 @@
+{
+  "name": "claude-skills",
+  "description": "Personal library of Claude Code skills — self-written and curated third-party.",
+  "version": "0.1.0",
+  "skills": "./skills/"
+}
