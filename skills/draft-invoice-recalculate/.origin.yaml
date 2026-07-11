@@ -1,0 +1,5 @@
+origin: mine
+source_repo: https://github.com/flexprice/claude-plugin
+source_path: skills/draft-invoice-recalculate
+source_ref: c4cd3f7
+snapshotted_at: 2026-07-11
