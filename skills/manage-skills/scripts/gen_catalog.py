@@ -2,6 +2,7 @@
 """Regenerate the skill catalog table in README.md from every skill's
 SKILL.md frontmatter and .origin.yaml. Replaces only the content between
 the <!-- CATALOG:START --> and <!-- CATALOG:END --> markers."""
+import argparse
 import sys
 from pathlib import Path
 
@@ -61,6 +62,7 @@ def update_readme(readme_path, skills_dir):
 
 
 def main():
+    argparse.ArgumentParser(description=__doc__).parse_args()
     root = Path(__file__).resolve().parents[2]
     update_readme(root.parent / "README.md", root)
     print("README.md catalog regenerated")
